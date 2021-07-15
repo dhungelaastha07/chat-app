@@ -1,0 +1,115 @@
+:root{
+    --black: #0D1B2A;
+    --light: #778DA9;
+    --blue: #004BA8;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.parent-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    position: relative;
+    height: 700px;
+    width: 414px;
+    margin: auto;
+    box-shadow: 1px 1px 20px -5px grey;
+}
+
+.top-bar{
+    background-color: var(--black);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    color: white;
+    height: 80px;
+}
+
+.name{
+    font-size: 24px;
+
+}
+
+.fas{
+    font-size: 34px;
+}
+
+.msg-container{
+    padding: 20px;
+    height: 520px;
+    overflow: scroll;
+}
+
+
+.text-msg{
+   background-color: var(--light);
+   padding: 10px 20px;
+   border-radius: 25px; 
+   display: inline-block;
+   color: white;
+}
+
+.text-msg.my-msg{
+    background-color: var(--blue);
+    text-align: right;
+    float: right;
+    margin-left: 205px;
+}
+
+.sender{
+   font-size: 10px;
+   margin-left: 10px;
+}
+
+.my-msg-container .sender {
+    float: right;
+    margin-left: 200px;
+    margin-right: 10px;
+}
+
+.textarea-btn{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    width: 370px;
+}
+
+.textarea{
+ width: 70%;
+ height:62px;
+ padding: 20px;
+ border-radius: 10px;
+ border: 1px solid grey;
+
+}
+
+button{
+    width: 30%;
+    height:62px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    background-color: var(--black);
+    color: white;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width : 500px) {
+    .container {
+        height: 100vh;
+    }
+
+    .msg-container{
+        height: calc(100vh - 200px);
+    }
+}
